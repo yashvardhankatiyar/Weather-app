@@ -1,0 +1,28 @@
+/* Style for the search input */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure it takes full height of its parent */
+ 
+}
+
+.input-search {
+  height: 55px;
+  width: 900px;
+  font-size: 27px;
+}
+
+/* Container to center the search bar and button */
+
+
+/* Style for the button */
+.s-btn {
+  height: 60px;
+  width: 100px;
+  background-color: #ff2526;
+  color: white;
+  right: 0;
+  font-weight: 400;
+  font-size: 20px;
+}

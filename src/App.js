@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import SearchBar from './components/SearchBar';
+import Card from './components/Card';
+import Header from './components/Header';
+import React, { useState } from 'react';
 
 function App() {
+  const [city, setCity] = useState('');
+
+  const searchCity = (data) => {
+    setCity(data);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <SearchBar searchCity={searchCity} />
+      <Card city={city} />
     </div>
   );
 }
